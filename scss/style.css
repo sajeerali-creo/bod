@@ -845,15 +845,17 @@ spaces
 
 .team-saj .mil-project-descr {
   padding: 24px !important;
-  display: none;
-  bottom: 0px;
+  bottom: -115px;
   position: absolute;
   background: #000;
   width: 100%;
   color: #fff;
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 .team-saj .mil-project-descr h3 {
   color: #fff;
+  font-size: 20px;
 }
 .team-saj .mil-project-descr div {
   color: #fff;
@@ -861,6 +863,7 @@ spaces
 .team-saj .team-box {
   height: 400px;
   position: relative;
+  overflow: hidden;
 }
 .team-saj .team-box img {
   width: 100%;
@@ -870,7 +873,8 @@ spaces
 }
 
 .team-box:hover .mil-project-descr {
-  display: block;
+  opacity: 1;
+  bottom: 0px;
 }
 
 .box-mission {
@@ -907,6 +911,19 @@ spaces
 }
 .box-vission p {
   color: #666;
+}
+
+.video-loading {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* -------------------------------------------
@@ -1042,11 +1059,11 @@ banner
   }
 }
 .mil-banner.mil-banner-sm {
-  height: 600px;
+  height: 460px;
 }
 @media screen and (max-width: 1200px) {
   .mil-banner.mil-banner-sm {
-    height: 480px;
+    height: 400px;
   }
 }
 
@@ -1358,9 +1375,10 @@ icons
 .mil-icon {
   display: inline-flex;
   padding: 15px;
+  color: #fff;
 }
 .mil-icon.mil-icon-accent-bg {
-  background-color: #8d8d8d;
+  background-color: #000;
 }
 .mil-icon.mil-icon-deep-bg {
   background-color: rgb(229, 229, 229);
@@ -1373,6 +1391,10 @@ icons
 .mil-icon.mil-icon-lg {
   width: 60px;
   height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
 }
 .mil-icon.mil-icon-xl {
   width: 80px;
@@ -2116,7 +2138,7 @@ top panel
     transform: translateY(10px);
     box-shadow: 0px 0px 40px 0px rgba(18, 24, 32, 0.1);
     width: 100%;
-    background-color: #8d8d8d;
+    background-color: #000;
     transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
   }
   .mil-navigation.mil-active {
@@ -2126,7 +2148,7 @@ top panel
     transform: translateY(0);
   }
   .mil-navigation nav {
-    padding: 30px 0;
+    padding: 80px 0;
   }
   .mil-navigation nav ul {
     width: 100%;
@@ -2148,7 +2170,8 @@ top panel
   .mil-navigation nav ul li a {
     color: rgb(0, 0, 0);
     position: relative;
-    padding: 0 15px;
+    padding: 15px;
+    color: #fff;
   }
   .mil-navigation nav ul li a:hover {
     color: rgb(0, 0, 0);
@@ -3212,6 +3235,6 @@ load more
 }
 
 .mil-service-card svg {
-  height: 70px;
-  height: 70px;
+  height: 50px;
+  height: 50px;
 }/*# sourceMappingURL=style.css.map */

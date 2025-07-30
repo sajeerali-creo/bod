@@ -18,10 +18,29 @@
     <!-- page name -->
     <title>BOD</title>
 
+    <!-- pre-loading -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.13.0/lottie.min.js"></script>
+    <!-- iocns -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
 </head>
 
 <body>
-
+    <!-- pre loading -->
+    <div class="video-loading">
+        <div class="loader" id="animation container">
+            <script>
+                var animation = bodymovin.loadAnimation({
+                    container: document.getElementById('animation container'),
+                    path: 'animation/scene.json',
+                    render: 'svg',
+                    loop: true,
+                    autoplay: true,
+                    name: 'animation'
+                })
+            </script>
+        </div>
+    </div>
     <!-- wrapper -->
     <div class="mil-wrapper">
 
@@ -33,7 +52,7 @@
         <div class="mil-top-panel">
             <div class="container-fluid">
                 <div class="mil-top-panel-content">
-                    <a href="home-3.html" class="mil-logo">
+                    <a href="index.html" class="mil-logo">
                         <img src="img/logo.svg" alt="Logo" style="width: 60px;">
                     </a>
                     <div class="d-flex">
@@ -81,7 +100,8 @@
                                     data-swiper-parallax-opacity="0">
 
                                     <div class="mil-mb-90">
-                                        <span class="mil-suptitle mil-light mil-upper mil-mb-60">The future</span>
+                                        <span class="mil-suptitle mil-light mil-upper mil-mb-60">Design | Build |
+                                            Transform</span>
                                         <h1 class="mil-upper mil-light mil-mb-60">Explore <br>new <span
                                                 class="mil-accent">design</span> in <br>urbanism</h1>
                                         <a href="project.html" class="mil-link mil-light mil-upper">View A Project <span
@@ -101,7 +121,8 @@
                                     data-swiper-parallax-opacity="0">
 
                                     <div class="mil-mb-90">
-                                        <span class="mil-suptitle mil-light mil-upper mil-mb-60">The future</span>
+                                        <span class="mil-suptitle mil-light mil-upper mil-mb-60">Design | Build |
+                                            Transform</span>
                                         <h1 class="mil-upper mil-light mil-mb-60">Design <br>with <span
                                                 class="mil-accent">community</span> <br>in mind</h1>
                                         <a href="project.html" class="mil-link mil-light mil-upper">View A Project <span
@@ -121,7 +142,8 @@
                                     data-swiper-parallax-opacity="0">
 
                                     <div class="mil-mb-90">
-                                        <span class="mil-suptitle mil-light mil-upper mil-mb-60">The future</span>
+                                        <span class="mil-suptitle mil-light mil-upper mil-mb-60">Design | Build |
+                                            Transform</span>
                                         <h1 class="mil-upper mil-light mil-mb-60">Modern<br><span
                                                 class="mil-accent">Architectural</span><br>Design</h1>
                                         <a href="project.html" class="mil-link mil-light mil-upper">View A Project <span
@@ -225,9 +247,7 @@
                                     </div>
                                     <h5 class="mil-upper mil-mb-20">Architectural Designing</h5>
                                     <div class="mil-divider-sm mil-mb-20"></div>
-                                    <div class="mil-go-buton mil-icon mil-icon-lg mil-icon-accent-bg">
-                                        <img src="img/icons/1.svg" alt="icon">
-                                    </div>
+
                                 </div>
                             </a>
                         </div>
@@ -253,9 +273,7 @@
                                     <h5 class="mil-upper mil-mb-20">Construction Monitoring</h5>
                                     <div class="mil-divider-sm mil-mb-20"></div>
 
-                                    <div class="mil-go-buton mil-icon mil-icon-lg mil-icon-accent-bg">
-                                        <img src="img/icons/1.svg" alt="icon">
-                                    </div>
+
                                 </div>
                             </a>
                         </div>
@@ -290,9 +308,7 @@
                                     <h5 class="mil-upper mil-mb-20">Developed Designing</h5>
                                     <div class="mil-divider-sm mil-mb-20"></div>
 
-                                    <div class="mil-go-buton mil-icon mil-icon-lg mil-icon-accent-bg">
-                                        <img src="img/icons/1.svg" alt="icon">
-                                    </div>
+
                                 </div>
                             </a>
                         </div>
@@ -321,9 +337,7 @@
                                     <h5 class="mil-upper mil-mb-20">Site Planning</h5>
                                     <div class="mil-divider-sm mil-mb-20"></div>
 
-                                    <div class="mil-go-buton mil-icon mil-icon-lg mil-icon-accent-bg">
-                                        <img src="img/icons/1.svg" alt="icon">
-                                    </div>
+
                                 </div>
                             </a>
                         </div>
@@ -471,9 +485,7 @@
                                     <h5 class="mil-upper mil-mb-20">Space Planning</h5>
                                     <div class="mil-divider-sm mil-mb-20"></div>
 
-                                    <div class="mil-go-buton mil-icon mil-icon-lg mil-icon-accent-bg">
-                                        <img src="img/icons/1.svg" alt="icon">
-                                    </div>
+
                                 </div>
                             </a>
                         </div>
@@ -495,95 +507,13 @@
                                     </div>
                                     <h5 class="mil-upper mil-mb-20">Contract Administration</h5>
                                     <div class="mil-divider-sm mil-mb-20"></div>
-
-                                    <div class="mil-go-buton mil-icon mil-icon-lg mil-icon-accent-bg">
-                                        <img src="img/icons/1.svg" alt="icon">
-                                    </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-4">
-                            <a href="service.html" class="mil-service-card mil-up mil-mb-30">
-                                <div class="mil-card-number">07.</div>
-                                <div class="mil-center">
-                                    <div class="mil-icon mil-mb-30">
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" x="0"
-                                            y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
-                                            xml:space="preserve">
-                                            <g>
-                                                <path
-                                                    d="M488.259 8.256a7.743 7.743 0 0 0-7.742 7.742c0 1.306.405 2.48.977 3.56L440.722 60.33l1.312-10.154a7.744 7.744 0 0 0-6.684-8.672c-4.279-.59-8.128 2.442-8.672 6.684l-4.226 32.688c-.6 4.643 3.347 9.338 8.672 8.672l32.688-4.226a7.743 7.743 0 0 0 6.684-8.672c-.548-4.241-4.487-7.285-8.672-6.684l-10.154 1.312 40.772-40.772c1.079.571 2.254.977 3.56.977a7.743 7.743 0 0 0 7.742-7.742c-.152-7.192.378-8.343-.598-10.701a7.752 7.752 0 0 0-4.186-4.186c-2.363-.978-3.59-.448-10.701-.598zM503.743 221.732a7.743 7.743 0 0 0-15.484 0v15.231a7.743 7.743 0 0 0 15.484 0zM503.743 381.649a7.743 7.743 0 0 0-15.484 0v15.231a7.743 7.743 0 0 0 15.484 0zM503.743 328.343a7.743 7.743 0 0 0-15.484 0v15.231a7.743 7.743 0 0 0 15.484 0zM503.743 61.815a7.743 7.743 0 0 0-15.484 0v15.231a7.743 7.743 0 0 0 15.484 0zM503.743 434.954a7.743 7.743 0 0 0-15.484 0v15.231a7.743 7.743 0 0 0 15.484 0zM503.743 275.037a7.743 7.743 0 0 0-15.484 0v15.231a7.742 7.742 0 0 0 15.484 0zM503.743 115.121a7.743 7.743 0 0 0-15.484 0v15.231a7.743 7.743 0 0 0 15.484 0zM503.743 168.426a7.743 7.743 0 0 0-15.484 0v15.231a7.743 7.743 0 0 0 15.484 0zM503.743 488.26a7.742 7.742 0 0 0-7.742-7.742c-1.306 0-2.48.405-3.56.977l-40.772-40.772 10.154 1.312c4.23.552 8.124-2.446 8.672-6.684a7.744 7.744 0 0 0-6.684-8.672c-13.258-1.677-29.915-3.95-33.127-4.182-5.236-.381-8.499 3.95-8.189 8.189.198 2.846 3.054 24.207 4.182 33.126 1.334 10.35 16.658 8.088 15.355-1.988l-1.312-10.154 40.772 40.772c-.571 1.079-.977 2.254-.977 3.56a7.742 7.742 0 0 0 7.742 7.742c7.192-.152 8.343.378 10.701-.598a7.749 7.749 0 0 0 4.186-4.186c.98-2.363.449-3.59.599-10.7zM328.339 488.26a7.742 7.742 0 0 0 0 15.484h15.231a7.743 7.743 0 0 0 0-15.484zM381.645 488.26a7.742 7.742 0 0 0 0 15.484h15.231a7.743 7.743 0 0 0 0-15.484zM450.181 503.744a7.743 7.743 0 0 0 0-15.484H434.95a7.742 7.742 0 0 0 0 15.484zM61.811 503.744h15.231a7.743 7.743 0 0 0 0-15.484H61.811a7.742 7.742 0 0 0 0 15.484zM221.728 488.26a7.742 7.742 0 0 0 0 15.484h15.231a7.743 7.743 0 0 0 0-15.484zM275.033 488.26a7.742 7.742 0 0 0 0 15.484h15.231a7.742 7.742 0 0 0 0-15.484zM168.422 488.26a7.742 7.742 0 0 0 0 15.484h15.231a7.743 7.743 0 0 0 0-15.484zM115.117 488.26a7.742 7.742 0 0 0 0 15.484h15.231a7.743 7.743 0 0 0 0-15.484zM13.039 503.146c2.363.978 3.59.448 10.701.598a7.743 7.743 0 0 0 7.742-7.742c0-1.306-.406-2.48-.977-3.56l40.769-40.771-1.312 10.153a7.744 7.744 0 0 0 7.69 8.736c3.833 0 7.164-2.847 7.666-6.748l4.226-32.688c.593-4.584-3.507-9.32-8.672-8.672l-32.684 4.226a7.743 7.743 0 0 0-6.684 8.672c.544 4.238 4.465 7.235 8.672 6.684l10.151-1.312-40.77 40.772c-1.079-.571-2.253-.977-3.559-.977a7.742 7.742 0 0 0-7.742 7.742c.153 7.208-.378 8.34.598 10.701a7.75 7.75 0 0 0 4.185 4.186zM15.998 191.399a7.743 7.743 0 0 0 7.742-7.742v-15.231a7.743 7.743 0 0 0-15.484 0v15.231a7.743 7.743 0 0 0 7.742 7.742zM15.998 351.316a7.742 7.742 0 0 0 7.742-7.742v-15.231a7.743 7.743 0 0 0-15.484 0v15.231a7.743 7.743 0 0 0 7.742 7.742zM15.998 298.01a7.742 7.742 0 0 0 7.742-7.742v-15.231a7.743 7.743 0 0 0-15.484 0v15.231a7.742 7.742 0 0 0 7.742 7.742zM15.998 138.093a7.743 7.743 0 0 0 7.742-7.742V115.12a7.743 7.743 0 0 0-15.484 0v15.231a7.742 7.742 0 0 0 7.742 7.742zM15.998 457.927a7.743 7.743 0 0 0 7.742-7.742v-15.231a7.743 7.743 0 0 0-15.484 0v15.231a7.743 7.743 0 0 0 7.742 7.742zM15.998 84.788a7.743 7.743 0 0 0 7.742-7.742V61.815a7.743 7.743 0 0 0-15.484 0v15.231a7.743 7.743 0 0 0 7.742 7.742zM15.998 404.621a7.742 7.742 0 0 0 7.742-7.742v-15.231a7.743 7.743 0 0 0-15.484 0v15.231a7.742 7.742 0 0 0 7.742 7.742zM15.998 244.705a7.743 7.743 0 0 0 7.742-7.742v-15.231a7.743 7.743 0 0 0-15.484 0v15.231a7.743 7.743 0 0 0 7.742 7.742zM15.998 31.482c1.306 0 2.48-.405 3.559-.977l40.77 40.772-10.151-1.312c-4.257-.601-8.128 2.442-8.672 6.684a7.744 7.744 0 0 0 6.684 8.672l32.684 4.226c5.252.656 9.276-3.999 8.672-8.672l-4.226-32.688c-.548-4.241-4.461-7.273-8.672-6.684a7.743 7.743 0 0 0-6.684 8.672l1.312 10.153-40.769-40.77c.571-1.079.977-2.254.977-3.56a7.743 7.743 0 0 0-7.742-7.742c-7.192.152-8.343-.378-10.701.598a7.752 7.752 0 0 0-4.186 4.186c-.977 2.364-.447 3.59-.598 10.701a7.744 7.744 0 0 0 7.743 7.741zM290.268 23.74a7.743 7.743 0 0 0 0-15.484h-15.231a7.743 7.743 0 0 0 0 15.484zM77.046 8.256H61.815a7.743 7.743 0 0 0 0 15.484h15.231a7.743 7.743 0 0 0 0-15.484zM236.962 23.74a7.743 7.743 0 0 0 0-15.484h-15.231a7.743 7.743 0 0 0 0 15.484zM427.212 15.998a7.742 7.742 0 0 0 7.742 7.742h15.231a7.743 7.743 0 0 0 0-15.484h-15.231a7.742 7.742 0 0 0-7.742 7.742zM396.879 23.74a7.743 7.743 0 0 0 0-15.484h-15.231a7.743 7.743 0 0 0 0 15.484zM130.351 23.74a7.743 7.743 0 0 0 0-15.484H115.12a7.743 7.743 0 0 0 0 15.484zM343.573 23.74a7.743 7.743 0 0 0 0-15.484h-15.231a7.743 7.743 0 0 0 0 15.484zM183.657 23.74a7.743 7.743 0 0 0 0-15.484h-15.231a7.743 7.743 0 0 0 0 15.484zM386.141 98.355H125.855c-16.181 0-29.342 13.161-29.342 29.342v256.647c0 16.181 13.161 29.342 29.342 29.342h260.286c16.18 0 29.342-13.161 29.342-29.342V127.697c0-16.18-13.161-29.342-29.342-29.342zM248.256 398.202H125.855c-7.587 0-13.858-6.271-13.858-13.858V127.697c0-7.664 6.271-13.858 13.858-13.858h122.401zm46.22-128.981c0 4.258-3.484 7.742-7.742 7.742s-7.742-3.484-7.742-7.742v-26.477c0-4.258 3.484-7.742 7.742-7.742s7.742 3.484 7.742 7.742z"
-                                                    fill="#000000" opacity="1" data-original="#000000"></path>
-                                                <path
-                                                    d="M225.259 235.027a7.743 7.743 0 0 0-7.742 7.742v26.466a7.743 7.743 0 0 0 15.484 0v-26.466a7.743 7.743 0 0 0-7.742-7.742z"
-                                                    fill="#000000" opacity="1" data-original="#000000"></path>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                    <h5 class="mil-upper mil-mb-20">Interior Installation</h5>
-                                    <div class="mil-divider-sm mil-mb-20"></div>
 
-                                    <div class="mil-go-buton mil-icon mil-icon-lg mil-icon-accent-bg">
-                                        <img src="img/icons/1.svg" alt="icon">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-4">
-                            <a href="service.html" class="mil-service-card mil-up mil-mb-30">
-                                <div class="mil-card-number">08.</div>
-                                <div class="mil-center">
-                                    <div class="mil-icon mil-mb-30">
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" x="0"
-                                            y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
-                                            xml:space="preserve">
-                                            <g>
-                                                <path
-                                                    d="M0 0v512h371.874v-70.063h-48.505v21.558H48.505v-26.947H121.262c13.373 0 24.253-10.879 24.253-24.253V293.726c0-13.373-10.879-24.253-24.253-24.253H48.505v-48.505h43.116v-12.382l51.414 42.845 10.351-12.421-61.765-51.47v-15.077H48.505V48.505h16.168v43.116h21.558v24.253c0 22.289 18.132 40.421 40.421 40.421s40.421-18.132 40.421-40.421V91.621h21.558V48.505H204.8v123.958h-53.895v48.505h102.4V48.505h16.168V296.42h177.853V48.505h16.168v274.863H323.368v69.41L293.4 422.747l11.432 11.432 40.748-40.748h26.294v-21.558H512V0H0zm91.621 285.642h29.642c4.458 0 8.084 3.626 8.084 8.084s-3.626 8.084-8.084 8.084H91.621v-16.168zm0 32.337h29.642c2.834 0 5.554-.494 8.084-1.391v72.844a24.12 24.12 0 0 0-8.084-1.391H91.621v-70.062zm0 86.232h29.642c4.458 0 8.084 3.626 8.084 8.084s-3.626 8.084-8.084 8.084H91.621v-16.168zM75.453 285.642V420.379H48.505V285.642h26.948zm75.452-169.768c0 13.373-10.879 24.253-24.253 24.253-13.373 0-24.253-10.879-24.253-24.253V91.621h48.505v24.253zm21.558-40.421H80.843V48.505h91.621v26.948zm258.695 204.8H285.642v-102.4h145.516v102.4zm0-118.569H285.642v-26.947h145.516v26.947zm0-43.116H285.642V48.505h145.516v70.063zm64.674 237.137H355.705v21.558h-16.168v-37.726h140.126v-307.2H237.137V204.8h-70.063v-16.168h53.895V32.337H32.337v156.295h43.116V204.8H32.337V479.664h307.2v-21.558h16.168v37.726H16.168V16.168h479.663v339.537z"
-                                                    fill="#000000" opacity="1" data-original="#000000"></path>
-                                                <path
-                                                    d="M396.126 53.895h-75.453c-7.43 0-13.474 6.044-13.474 13.474v32.337c0 7.43 6.044 13.474 13.474 13.474h75.453c7.43 0 13.474-6.044 13.474-13.474V67.368c0-7.43-6.044-13.473-13.474-13.473zm-2.694 43.116h-70.063V70.063h70.063v26.948zM218.274 306.22c-34.716 0-62.959 28.243-62.959 62.959s28.243 62.959 62.959 62.959 62.959-28.243 62.959-62.959-28.244-62.959-62.959-62.959zm0 109.749c-25.8 0-46.79-20.99-46.79-46.79s20.99-46.79 46.79-46.79 46.79 20.99 46.79 46.79-20.99 46.79-46.79 46.79zM406.905 420.379h16.168v16.168h-16.168zM471.579 420.379h16.168v16.168h-16.168zM439.242 420.379h16.168v16.168h-16.168z"
-                                                    fill="#000000" opacity="1" data-original="#000000"></path>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                    <h5 class="mil-upper mil-mb-20">Interior Design</h5>
-                                    <div class="mil-divider-sm mil-mb-20"></div>
-
-                                    <div class="mil-go-buton mil-icon mil-icon-lg mil-icon-accent-bg">
-                                        <img src="img/icons/1.svg" alt="icon">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-4">
-                            <a href="service.html" class="mil-service-card mil-up mil-mb-30">
-                                <div class="mil-card-number">09.</div>
-                                <div class="mil-center">
-                                    <div class="mil-icon mil-mb-30">
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" x="0"
-                                            y="0" viewBox="0 0 500 500" style="enable-background:new 0 0 512 512"
-                                            xml:space="preserve">
-                                            <g>
-                                                <path fill-rule="evenodd"
-                                                    d="M94.837 465.048a6.856 6.856 0 0 1-6.873 6.856l-57.354.001c-3.754 0-6.815-3.073-6.815-6.856l-.001-57.354c0-3.783 3.061-6.856 6.815-6.856a6.857 6.857 0 0 1 6.874 6.856l.001 50.504 50.481-.001c3.81 0 6.872 3.067 6.872 6.85zm381.379-57.364.001 57.354a6.856 6.856 0 0 1-6.873 6.856l-57.354.001c-3.754 0-6.816-3.073-6.816-6.856s3.061-6.85 6.815-6.85l50.539-.001-.001-50.504c0-3.783 3.061-6.856 6.815-6.856a6.857 6.857 0 0 1 6.874 6.856zM23.784 92.316l-.001-57.36c0-3.783 3.061-6.85 6.815-6.85l57.354-.001c3.812 0 6.874 3.067 6.874 6.85s-3.061 6.856-6.873 6.856l-50.481.001.001 50.504c0 3.783-3.061 6.85-6.873 6.85-3.754 0-6.816-3.067-6.816-6.85zm452.423-57.372.001 57.36c0 3.783-3.061 6.85-6.873 6.85-3.754 0-6.815-3.067-6.816-6.85l-.001-50.504-50.539.001c-3.754 0-6.816-3.073-6.816-6.856s3.061-6.85 6.815-6.85l57.354-.001c3.813 0 6.874 3.067 6.875 6.85zM122.495 125.27l-28.65-35.463-28.705 35.465h12.534c5.7 0 8.937 6.707 5.314 11.159l-31.131 38.52 21.082-.001c5.754 0 8.94 6.687 5.314 11.165l-26.395 32.686 83.981-.002-26.454-32.685c-3.611-4.454-.425-11.165 5.313-11.165l21.14-.001-31.133-38.519c-3.622-4.451-.457-11.159 5.314-11.159zm114.769 132.161 116.384-.003.002 87.181-271.87.007c33.326-54.057 91.892-87.184 155.484-87.185zm60.011-13.714-50.135.001v-16.444c0-13.827 11.205-25.079 25.067-25.079 13.804 0 25.068 11.251 25.068 25.078zm-106.913-72.883.002 78.592a196.007 196.007 0 0 1 43.03-5.662v-16.49c-.001-21.388 17.442-38.791 38.813-38.792s38.757 17.402 38.757 38.79v16.444l42.684-.001-.002-73.134-81.441-48.862zm227.164-32.517-50.192.001.001 58.966 26.338-.001a6.856 6.856 0 1 1 0 13.712l-26.338.001.002 73.221 25.067-.001a6.857 6.857 0 0 1 6.874 6.856 6.853 6.853 0 0 1-6.873 6.856l-25.067.001.001 53.536c0 3.783-3.061 6.856-6.815 6.856l-99.287.002.001 25.073c0 3.789-3.119 6.856-6.873 6.856a6.853 6.853 0 0 1-6.873-6.856l-.001-25.073-83.75.002.001 25.073a6.853 6.853 0 0 1-6.873 6.856c-3.754 0-6.816-3.067-6.816-6.856l-.001-25.073-73.238.002.001 50.152 340.718-.008zM88.473 74.599l-42.971 53.214c-3.618 4.46-.463 11.171 5.314 11.17h12.476l-31.131 38.508c-3.621 4.463-.391 11.171 5.314 11.17l21.082-.001-26.395 32.686c-3.621 4.459-.391 11.159 5.314 11.159l49.499-.001.002 81.532a198.65 198.65 0 0 0-22.871 33.893c-.797 1.361-.982 2.141-.982 3.541l.002 63.864c0 3.795 3.061 6.856 6.816 6.856l354.407-.009a6.849 6.849 0 0 0 6.873-6.856l-.007-283.867a6.856 6.856 0 0 0-6.873-6.856l-63.823.002a6.856 6.856 0 0 0-6.873 6.856l.001 23.138-77.918-46.754c-2.195-1.3-4.909-1.3-7.046 0l-88.716 53.227a6.84 6.84 0 0 0-3.35 5.874l.002 86.407c-28.417 9.271-54.408 24.982-75.952 45.914l-.002-66.763 49.499-.001c5.747 0 8.945-6.689 5.314-11.159l-26.397-32.685 21.082-.001c5.747 0 8.944-6.697 5.314-11.171l-31.133-38.507h12.534c5.705 0 8.934-6.71 5.314-11.171L99.159 74.599c-2.801-3.443-7.932-3.364-10.686 0z"
-                                                    clip-rule="evenodd" fill="#000000" opacity="1"
-                                                    data-original="#000000"></path>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                    <h5 class="mil-upper mil-mb-20">Landscape Design</h5>
-                                    <div class="mil-divider-sm mil-mb-20"></div>
-
-                                    <div class="mil-go-buton mil-icon mil-icon-lg mil-icon-accent-bg">
-                                        <img src="img/icons/1.svg" alt="icon">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                    </div>
+                    <div class="mil-top-panel-buttons d-flex justify-content-center">
+                        <a href="services.html" class="mil-button mil-sm">View All Services</a>
                     </div>
                 </div>
             </section>
@@ -598,7 +528,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="mil-center mil-mb-90">
-                                <span class="mil-suptitle mil-upper mil-up mil-mb-30">Services</span>
+                                <span class="mil-suptitle mil-upper mil-up mil-mb-30">Projects</span>
                                 <h2 class="mil-upper mil-up">What We Do</h2>
                             </div>
                         </div>

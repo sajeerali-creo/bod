@@ -17,11 +17,29 @@
     <link rel="stylesheet" href="scss/style.css">
     <!-- page name -->
     <title>BOD</title>
+    <!-- pre-loading -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.13.0/lottie.min.js"></script>
+      <!-- iocns -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
 
 </head>
 
 <body>
-
+ <!-- pre loading -->
+    <div class="video-loading">
+        <div class="loader" id="animation container">
+            <script>
+                var animation = bodymovin.loadAnimation({
+                    container: document.getElementById('animation container'),
+                    path: 'animation/scene.json',
+                    render: 'svg',
+                    loop: true,
+                    autoplay: true,
+                    name: 'animation'
+                })
+            </script>
+        </div>
+    </div>
     <!-- wrapper -->
     <div class="mil-wrapper">
 
@@ -33,7 +51,7 @@
         <div class="mil-top-panel">
             <div class="container-fluid">
                 <div class="mil-top-panel-content">
-                    <a href="home-3.html" class="mil-logo">
+                    <a href="index.html" class="mil-logo">
                         <img src="img/logo.svg" alt="Logo" style="width: 60px;">
                     </a>
                     <div class="d-flex">

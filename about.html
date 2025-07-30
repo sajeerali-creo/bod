@@ -17,11 +17,30 @@
     <link rel="stylesheet" href="scss/style.css">
     <!-- page name -->
     <title>BOD</title>
+    <!-- pre-loading -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.13.0/lottie.min.js"></script>
+    <!-- iocns -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
 
 </head>
 
 <body>
 
+    <!-- pre loading -->
+    <div class="video-loading">
+        <div class="loader" id="animation container">
+            <script>
+                var animation = bodymovin.loadAnimation({
+                    container: document.getElementById('animation container'),
+                    path: 'animation/scene.json',
+                    render: 'svg',
+                    loop: true,
+                    autoplay: true,
+                    name: 'animation'
+                })
+            </script>
+        </div>
+    </div>
     <!-- wrapper -->
     <div class="mil-wrapper">
 
@@ -33,7 +52,7 @@
         <div class="mil-top-panel">
             <div class="container-fluid">
                 <div class="mil-top-panel-content">
-                    <a href="home-3.html" class="mil-logo">
+                    <a href="index.html" class="mil-logo">
                         <img src="img/logo.svg" alt="Logo" style="width: 60px;">
                     </a>
                     <div class="d-flex">
@@ -167,7 +186,9 @@
                             <div class="box-vission">
                                 <h3 class="text-white mil-upper mil-up mb-4">Vision</h3>
                                 <p>
-                                    To be a leading force in architectural and interior design, transforming ideas into inspiring, functional spaces that reflect our clients' aspirations—regardless of scale, style, or budget.
+                                    To be a leading force in architectural and interior design, transforming ideas into
+                                    inspiring, functional spaces that reflect our clients' aspirations—regardless of
+                                    scale, style, or budget.
 
 
                                 </p>
@@ -196,7 +217,7 @@
                                     <img src="img/team-1.webp" alt="cover">
                                     <div class="mil-project-descr">
                                         <h3 class="mil-upper mil-mb-10">Ajeesh Kurikkal</h3>
-                                        <div class="mil-link mil-upper">CEO</div>
+                                        <div class="mil-upper">CEO</div>
                                     </div>
                                 </div>
                             </div>
@@ -207,7 +228,7 @@
                                     <img src="img/team-2.webp" alt="cover">
                                     <div class="mil-project-descr">
                                         <h3 class="mil-upper mil-mb-10">Robby</h3>
-                                        <div class="mil-link mil-upper">Chief Architect</div>
+                                        <div class="mil-upper">Chief Architect</div>
                                     </div>
                                 </div>
                             </div>
@@ -218,7 +239,7 @@
                                     <img src="img/team-3.webp" alt="cover">
                                     <div class="mil-project-descr">
                                         <h3 class="mil-upper mil-mb-10">Muhammed Shafeeq</h3>
-                                        <div class="mil-link mil-upper">Managing Director</div>
+                                        <div class="mil-upper">Managing Director</div>
                                     </div>
                                 </div>
                             </div>
@@ -229,7 +250,7 @@
                                     <img src="img/team-4.webp" alt="cover">
                                     <div class="mil-project-descr">
                                         <h3 class="mil-upper mil-mb-10">Sherin AP</h3>
-                                        <div class="mil-link mil-upper">BDM</div>
+                                        <div class="mil-upper">BDM</div>
                                     </div>
                                 </div>
                             </div>
@@ -241,18 +262,18 @@
         <!-- team end -->
 
         <!-- contact info -->
-        <section>
+        <section class="pb-5">
             <div class="container mil-p-60-120">
                 <div class="mil-background-grid mil-softened"></div>
                 <div class="mil-contact-frame mil-up">
                     <div class="row justify-content-between align-items-center">
                         <div class="col-lg-4 mil-mb-30">
                             <p class="mil-dark mil-up mil-mb-10">Email address</p>
-                            <h4 class="mil-thin mil-up">projects@ruizarch.com</h4>
+                            <h4 class="mil-thin mil-up">info@boddesignhub.com</h4>
                         </div>
                         <div class="col-lg-4 mil-mb-30">
                             <p class="mil-dark mil-up mil-mb-10">Free Consultation</p>
-                            <h4 class="mil-thin mil-up">1 800 847 7978</h4>
+                            <h4 class="mil-thin mil-up">+91 9752848484</h4>
                         </div>
                         <div class="col-lg-3 mil-mb-30">
                             <a href="contact.html" class="mil-button mil-up mil-fw">Find a Space</a>

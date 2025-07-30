@@ -17,11 +17,29 @@
     <link rel="stylesheet" href="scss/style.css">
     <!-- page name -->
     <title>Ruizarch</title>
+    <!-- pre-loading -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.13.0/lottie.min.js"></script>
+    <!-- iocns -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
 
 </head>
 
 <body>
-
+    <!-- pre loading -->
+    <div class="video-loading">
+        <div class="loader" id="animation container">
+            <script>
+                var animation = bodymovin.loadAnimation({
+                    container: document.getElementById('animation container'),
+                    path: 'animation/scene.json',
+                    render: 'svg',
+                    loop: true,
+                    autoplay: true,
+                    name: 'animation'
+                })
+            </script>
+        </div>
+    </div>
     <!-- wrapper -->
     <div class="mil-wrapper">
 
@@ -33,7 +51,7 @@
         <div class="mil-top-panel">
             <div class="container-fluid">
                 <div class="mil-top-panel-content">
-                    <a href="home-3.html" class="mil-logo">
+                    <a href="index.html" class="mil-logo">
                         <img src="img/logo.svg" alt="Logo" style="width: 60px;">
                     </a>
 
@@ -68,8 +86,8 @@
 
             <!-- banner -->
             <section class="mil-banner mil-banner-sm">
-                <img src="img/b_3.webp" class="mil-bg-img mil-scale" data-value-1=".4" data-value-2="1.4"
-                    alt="image" style="object-position: top">
+                <img src="img/b_3.webp" class="mil-bg-img mil-scale" data-value-1=".4" data-value-2="1.4" alt="image"
+                    style="object-position: top">
                 <div class="mil-overlay"></div>
                 <div class="container">
                     <div class="mil-background-grid mil-top-space"></div>
@@ -341,15 +359,15 @@
                 <div class="mil-divider-lg"></div>
             </div>
 
-            
+
 
             <div class="container">
                 <div class="mil-divider-lg"></div>
             </div>
 
-            
 
-             <!-- footer -->
+
+            <!-- footer -->
             <footer class="mil-relative">
                 <img src="img/footer-bg.webp" class="mil-bg-img mil-parallax" alt="image" style="object-position: top;"
                     data-value-1="-25%" data-value-2="23%">

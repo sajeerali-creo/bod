@@ -359,15 +359,15 @@ $(function () {
     top panel
 
     ***************************/
-    if($('.mil-top-panel').length) {
-    $(window).on('scroll', function() {
-        if ($(this).scrollTop() > 10) {
-            $('.mil-top-panel').addClass('mil-active');
-        } 
-        else {
-            $('.mil-top-panel').removeClass('mil-active');
-        }
-    });
+    if ($('.mil-top-panel').length) {
+        $(window).on('scroll', function () {
+            if ($(this).scrollTop() > 10) {
+                $('.mil-top-panel').addClass('mil-active');
+            }
+            else {
+                $('.mil-top-panel').removeClass('mil-active');
+            }
+        });
     }
 
     $(".mil-menu-btn").on("click", function () {
@@ -375,10 +375,10 @@ $(function () {
         $('.mil-navigation').toggleClass('mil-active');
     });
 
-    if($(window).width() < 1200){
-    $('.mil-navigation ul li.mil-has-children > a').on('click', function () {
-		return false;
-	});
+    if ($(window).width() < 1200) {
+        $('.mil-navigation ul li.mil-has-children > a').on('click', function () {
+            return false;
+        });
     }
 
     /***************************
@@ -409,10 +409,10 @@ $(function () {
     });
 
     var $container = $('.mil-portfolio-grid');
-	$container.imagesLoaded(function() {
-		$container.isotope('layout');
+    $container.imagesLoaded(function () {
+        $container.isotope('layout');
         ScrollTrigger.refresh();
-	});
+    });
 
     var initShow = 4;
     var counter = initShow;
@@ -480,7 +480,7 @@ $(function () {
         fixedContentPos: false,
         mainClass: 'mfp-fade',
         callbacks: {
-            markupParse: function(template, values, item) {
+            markupParse: function (template, values, item) {
                 template.find('iframe').attr('allow', 'autoplay');
             }
         }
@@ -552,46 +552,54 @@ $(function () {
     contact form
 
     ***************************/
-    if($('.cform').length) {
-		$('#cform').validate({
-			rules: {
-				name: {
-					required: true
-				},
-				tel: {
-					required: true
-				},
-				email: {
-					required: true,
-					email: true
-				},
+    if ($('.cform').length) {
+        $('#cform').validate({
+            rules: {
+                name: {
+                    required: true
+                },
+                tel: {
+                    required: true
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
                 budget: {
-					required: true
-				},
-				message: {
-					required: true
-				}
-			},
-			success: 'valid',
-			submitHandler: function() {
-				$.ajax({
-					url: 'mailer/feedback.php',
-					type: 'post',
-					dataType: 'json',
-					data: 'name='+ $("#cform").find('input[name="name"]').val() + '&email='+ $("#cform").find('input[name="email"]').val() + '&tel='+ $("#cform").find('input[name="tel"]').val() + '&budget='+ $("#cform").find('input[name="budget"]').val() + '&message='+ $("#cform").find('textarea[name="message"]').val(),
-					beforeSend: function() {
-	
-					},
-					complete: function() {
-	
-					},
-					success: function(data) {
-						$('#cform').fadeOut();
-						$('.alert-success').delay(1000).fadeIn();
-					}
-				});
-			}
-		});
-	}
+                    required: true
+                },
+                message: {
+                    required: true
+                }
+            },
+            success: 'valid',
+            submitHandler: function () {
+                $.ajax({
+                    url: 'mailer/feedback.php',
+                    type: 'post',
+                    dataType: 'json',
+                    data: 'name=' + $("#cform").find('input[name="name"]').val() + '&email=' + $("#cform").find('input[name="email"]').val() + '&tel=' + $("#cform").find('input[name="tel"]').val() + '&budget=' + $("#cform").find('input[name="budget"]').val() + '&message=' + $("#cform").find('textarea[name="message"]').val(),
+                    beforeSend: function () {
 
+                    },
+                    complete: function () {
+
+                    },
+                    success: function (data) {
+                        $('#cform').fadeOut();
+                        $('.alert-success').delay(1000).fadeIn();
+                    }
+                });
+            }
+        });
+    }
+
+});
+
+
+// loading
+$(window).on('load', function () {
+    setTimeout(function () { // allowing 3 secs to fade out loader
+        $('.video-loading').fadeOut('slow');
+    }, 1500);
 });
