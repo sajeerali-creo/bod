@@ -2939,7 +2939,7 @@ map
   height: 200%;
 }
 .mil-map-frame .mil-map iframe {
-  width: 100%;
+  width: 100%!important;
   height: 100%;
 }
 

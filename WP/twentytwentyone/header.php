@@ -66,7 +66,7 @@
         <div class="mil-top-panel">
             <div class="container-fluid">
                 <div class="mil-top-panel-content">
-                    <a href="index.html" class="mil-logo">
+                    <a href="/" class="mil-logo">
                         <img src="/wp-content/uploads/2025/08/logo-1.svg" alt="Logo" style="width: 60px;">
                     </a>
                     <div class="d-flex">
